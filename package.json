@@ -1,0 +1,16 @@
+{
+  "name": "desafio_fullstack",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "nodemon src/index.js"
+  },
+  "devDependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^2.0.7"
+  },
+  "dependencies": {
+    "uuidv4": "^6.2.6"
+  }
+}
