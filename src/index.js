@@ -1,7 +1,10 @@
 const express = require('express');
+const cors = require('cors');
 const { uuid } = require('uuidv4');
 
 const app = express();
+
+app.use(cors());
 
 app.use(express.json());
 
@@ -45,6 +48,7 @@ app.post('/posts', (request, response) => {
     posts.push(post);
 
     return response.json({
+        id: post.id,
         message: post.message
     });
 });
@@ -83,6 +87,7 @@ app.post('/posts/:id/comments', (request, response) => {
 
 
     return response.json({
+        id: postComment.id,
         comment: postComment.comment
     });
 });
