@@ -1,7 +1,5 @@
 # Desafio Fullstack - Backend
 
----
-
 ## Para iniciar o projeto
 
 - Descompactar o arquivo do projeto
